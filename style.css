@@ -1,0 +1,324 @@
+ /* Default background color for the webpage */
+    body {
+        background-color: #BFF6C3; 
+        color: black; 
+    }
+
+/* Custom scrollbar styles */
+.container::-webkit-scrollbar {
+    width: 10px; /* Set scrollbar width */
+    height: 100%; /* Set scrollbar height */
+    position: absolute; /* Position the scrollbar */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #FF9933; /* Saffron color */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #FFFFFF; /* White color */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: #138808; /* Green color */
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 100;
+}
+
+/* Ribbon styles */
+.ribbon {
+    background-color: #0000ff;
+    padding: 2.5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ribbon icon styles */
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.home-icon {
+    background-image: url('file:///C:/Users/DELL/Desktop/bipro/imz/home-icon.png.png'); /* Replace 'home-icon.png' with your home icon image */
+}
+
+
+
+
+/* Font size display */
+.font-size {
+    margin-right: 5px;
+}
+
+/* Theme button styles */
+.theme-button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+/* Neon Theme */
+.neon-theme {
+    /* Add your neon theme styles here */
+    background-color: black;
+    color: yellow;
+}
+
+/* Light Theme */
+.light-theme {
+    /* Add your light theme styles here */
+    background-color: #FF76CE;
+    color: black;
+}
+
+
+/* Language button styles */
+.language-button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+
+/* Language dropdown styles */
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.language-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.language-dropdown li {
+    padding: 5px 5px;
+}
+
+/* Show language dropdown when button is clicked */
+.language-button:hover + .language-dropdown,
+.language-dropdown:hover {
+    display: block;
+}
+/* Ribbon 2 styles */
+.ribbon-2 {
+    background-color: #ffffff;
+    color: #FF9933;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left content styles */
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content img {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Add some spacing */
+    margin-left: 40px
+}
+
+.vertical-line {
+    width: 2px;
+    height: 100px; /* Adjust height as needed */
+    background-color: #000;
+    margin-right: 20px; /* Add some spacing */
+}
+/* CSS */
+.home-ministry {
+    color: #ff0000; /* Set the color for "Home Ministry" */
+}
+
+.government-of-india {
+    color: #00ff00; /* Set the color for "Government of India" */
+}
+
+.text {
+    font-size: 14px;
+    color: #046A38;
+}
+
+.text h3 {
+    font-size: 18px; /* Larger font size for heading */
+    margin: 0; /* Remove margin */
+    color: #ff671f;
+}
+
+.text p {
+    font-size: 12px; /* Smaller font size for paragraph */
+    margin: 0; /* Remove margin */
+    color: #046A38;
+}
+
+/* Right content styles */
+.right-content img {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px;
+}
+
+/* CSS for navigation bar */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden; /* Clear floats */
+    text-align: center; /* Center-align the navigation links */
+}
+
+.navbar a {
+    display: inline-block; /* Display the links as inline-block to center them */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    padding: 14px 16px; /* Padding */
+    border-right: 1px solid white; /* Add a vertical line to the right of each link */
+}
+
+.navbar a:last-child {
+    border-right: none; /* Remove the vertical line for the last link */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Hover background color */
+    color: #ff671f; /* Hover text color */
+}
+
+
+
+/* CSS for the press release box */
+.press-release-box {
+    width: 300px;
+    background-color: rgba(255, 153, 51, 0.5); /* 25% saffron */
+    padding: 20px;
+    /*border: 1px solid #111;*/
+    box-shadow: 2px 2px 5px rgba(255, 153, 51, 0.25);
+    position: absolute;
+    top: calc(550px + 100px);  /*Assuming the navigation bar has a height of 50px */
+    right: 100px;
+    transform: translateY(-50%);
+}
+.press-release-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.news-slider {
+    height: 200px; /* Set the height of the slider */
+    overflow: hidden;
+}
+
+.news-headline {
+    padding: 10px;
+    border-bottom: 1px solid rgba(19, 136, 8, 1);
+    transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+/* Style the first news headline to start from the top */
+.news-headline:first-child {
+    transform: translateY(0);
+}
+
+/* Hide the rest of the news headlines below the visible area */
+.news-headline:not(:first-child) {
+    transform: translateY(100%);
+}
+
+/* Add animation to slide the news headlines up */
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Set background color with 25% green */
+.news-headline {
+    background-color: rgba(19, 136, 8, 0.25); /* 25% green */
+}
+
+.slider-container {
+  position: relative;
+  width: 1270px;
+  margin: 0 auto;
+  overflow: hidden;
+  align-self: center;
+  top: calc(5px + 5px); 
+}
+
+.slider {
+  width: calc(1270px * 5);
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 1270px;
+  height: 200px;
+}
+
+
+
+.photo_container {
+  width: 100%;
+  height: auto;
+  margin: auto; 
+  overflow: hidden;
+  position: absolute;
+  bottom:  calc(10px + 10px);  /*Assuming the navigation bar has a height of 50px */
+  transform: translateY(475%);
+  background-color: rgba(19, 136, 8, 0.25); /* 25% green */
+}
+
+.photo_container img {
+  margin: 25px;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+.photo_container{
+    display: flex;
+}
+
+
+
+/* Styles for the bottom ribbon bar */
+.bottom-ribbon {
+  background-color: #FF9933; 
+  color: #000; 
+  padding: 5px; 
+  text-align: center;
+  position: absolute;
+  bottom:  calc(100px + 100px);
+  transform: translateY(400%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+/*------------------------------------------------13-MAY-2024-----------------------------------------*/
